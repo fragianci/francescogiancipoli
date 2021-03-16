@@ -1,2 +1,2 @@
 # francescogiancipoli.io
-These are my first repository and my first website
+These is my first website
