@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #000;
+  background-color: #e6e6e6;
 }
 
 body h1 {
@@ -156,7 +156,12 @@ body footer .footer .Email {
   background-image: linear-gradient(to bottom, #b92121, #bd9a28);
 }
 
-@media only screen and (max-width: 5000px) {
+@media only screen and (max-width: 700px) {
+  
+  body {
+    background-color: #000;
+  }
+  
   body p {
     padding: 10px;
   }
