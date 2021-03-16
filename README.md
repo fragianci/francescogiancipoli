@@ -1,2 +1,2 @@
 # francescogiancipoli
-This is my first website
+This is my first website. I wanted to add a minimal style but also unique 
