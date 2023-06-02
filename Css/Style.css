@@ -43,7 +43,8 @@ body .navbar #collapsibleNavbar ul li {
   padding: 0 10px 0 10px;
 }
 
-body .navbar #collapsibleNavbar ul li .nav-link:link, body .navbar #collapsibleNavbar ul li .nav-link:visited {
+body .navbar #collapsibleNavbar ul li .nav-link:link,
+body .navbar #collapsibleNavbar ul li .nav-link:visited {
   color: #e6e6e6;
 }
 
