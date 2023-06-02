@@ -11,12 +11,13 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <!--Icone-->
         <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>   
-        <link rel="stylesheet" href="Css/Style.css">
-        <link rel="icon" href="Img/favicon.png" type="image/png">
+        <!-- <script src="https://cdn.jsdelivr.net/npm/luxon@3.3.0/build/global/luxon.min.js"></script> -->
+        <link rel="stylesheet" href="src/Css/Style.css">
+        <link rel="icon" href="assets/Img/favicon.png" type="image/png">
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
         
         <!--Javascript snippet for the form "Contact me"-->
-        <script src="Js/script.js"></script>
+        <script type="module" src="src/Js/script.js"></script>
     </head>
 
     <body>
@@ -28,113 +29,153 @@
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav">
                     <li class="nav-item">   
-                        <a class="nav-link" href="#Story">Story</a>
+                        <a class="nav-link" id="anchor-1" href="#Story">Story</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#Skills">Skills</a>
+                        <a class="nav-link" id="anchor-2" href="#Skills">Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href='#Social'>Social</a>
+                        <a class="nav-link" id="anchor-3" href='#Social'>Social</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href='#Contact-me'>Contact</a>
+                        <a class="nav-link" id="anchor-4" href='#Contact-me'>Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link notClicked" id="case-studies">Case studies</a>
                     </li>
                 </ul>
             </div>
         </nav>    
         
-        <!--Presentation-->
-        <div class="container-fluid presentation">
-            <div class="name">
-                <h1 class="name-surname">GIANCIPOLI FRANCESCO</h1>      
+        <div class="hide" id="main-content">
+            <!--Presentation-->
+            <div class="container-fluid presentation">
+                <div class="name">
+                    <h1 class="name-surname">GIANCIPOLI FRANCESCO</h1>      
+                </div>
+                <div class="objective">
+                    <p class="obj">-Junior Front end Developer-</p>
+                </div>
             </div>
-            <div class="objective">
-                <p class="obj">-Junior Front end Developer-</p>
-            </div>
+
+            <!--My short story-->
+            <section class="container-fluid">
+                <div class="image"> <img id="Fra" src="assets/Img/img.jpg" alt="Francesco Giancipoli"> </div>
+                <div class="Story" id="Story"> <h2>A piece of my story.</h2> 
+                    <div class="story-paragraph">
+                        <p>My name is Francesco Giancipoli, I am 
+                            <!-- todo > il cambiamento dell'eta puo essere automatizzato con luxon ma non riesco a importarlo correttamente -->
+                            <label id="age">22</label>
+                         years old and I am passionate about web
+                            development.</p>
+                            <p>
+                                In high school I studied Information Technology because i had to and for
+                                many reasons at the time I just didn't like what I was doing.
+                            </p>
+                            <p>
+                                Over time, however, I became more and more curious about how the world of
+                                work "worked", realizing how important the digital sector is for companies
+                                and people, thus I was also becoming passionate about the world of
+                                innovation and personal growth.
+                            </p>
+                            <p>
+                                It is no coincidence that I also like other fields such as marketing and
+                                design but I want to focus on web development to achieve my personal
+                                goals because I know very well that if I do few things I can do them great.
+                                That is also a key for a minimalist mindset.
+                            </p>
+                            <p>
+                                I love this field because it requires technical and creative skills.
+                            </p>
+                            <p>
+                                I also love sports and cinema in fact I like go out for a run,
+                                being in the nature and watching movies.
+                        </p>
+                    </div>
+                </div>
+            </section>
+    
+            <!--Hard and soft skills-->
+            <section class="container-fluid skills" id="Skills">
+                <h2>Hard and soft kills.</h2>
+                <p><b>Hard skills:</b>
+                    <ul> 
+                        <li> Html 5 and Css 3 </li>
+                        <li> Bootstrap 5 </li>
+                        <li> Typescript and Angular </li>
+                        <li> Versione control with Git </li>
+                        <li> Figma for prototyping websites and Material design </li>
+                        <li> Java and Sql </li>
+                    </ul>
+                </p>
+                <p>
+                    Platforms on which I'm studying: 
+                    <!--target="_blank" for open a link in a new tab-->
+                    <a href="https://www.start2impact.it/" target="_blank">Start2impact</a>, 
+                    <a href="https://www.w3schools.com/" target="_blank">W3schools</a> and
+                    <a href="https://www.udemy.com/" target="_blank">Udemy</a>
+                </p>
+                <p><b>Soft skills:</b> In the past I have worked closely with clients as a stagist
+                    and I like talking, meeting new people and listening new advices and opinions.
+                </p>
+            </section>
+    
+            <!-- todo > aggiungere case studies qui -->
+    
+            <!--Social-->
+            <section class="container-fluid padding social" id="Social">
+                <div class="row text-center padding">
+                    <div class="col-12">
+                        <h2>Social.</h2>
+                    </div>
+                    <div class="col-12 social padding">
+                        <a href="https://github.com/fragianci" target="_blank">
+                            <i class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/fragianci" target="_blank">
+                            <i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/francesco-g-278a22112/" target="_blank">
+                            <i class="fab fa-linkedin"></i></a>  
+                    </div>
+                </div>
+            </section>
         </div>
 
-        <!--My short story-->
-        <section class="container-fluid">
-            <div class="image"> <img id="Fra" src="Img/img.jpg" alt="Francesco Giancipoli"> </div>
-            <div class="Story" id="Story"> <h2>A piece of my story.</h2> 
-                <div class="story-paragraph">
-                    <p>My name is Francesco Giancipoli, I am 22 years old and I am passionate about web
-                        development.</p>
-                        <p>
-                            In high school I studied Information Technology because i had to and for
-                            many reasons at the time I just didn't like what I was doing.
-                        </p>
-                        <p>
-                            Over time, however, I became more and more curious about how the world of
-                            work "worked", realizing how important the digital sector is for companies
-                            and people, thus I was also becoming passionate about the world of
-                            innovation and personal growth.
-                        </p>
-                        <p>
-                            It is no coincidence that I also like other fields such as marketing and
-                            design but I want to focus on web development to achieve my personal
-                            goals because I know very well that if I do few things I can do them great.
-                            That is also a key for a minimalist mindset.
-                        </p>
-                        <p>
-                            I love this field because it requires technical and creative skills.
-                        </p>
-                        <p>
-                            I also love sports and cinema in fact I like go out for a run,
-                            being in the nature and watching movies.
-                    </p>
-                </div>
+        <!-- Case study -->
+        <div class="show" id="case-study">
+            <h2>Here's a case study of a project I've followed.</h2>
+
+            <p>My role in this has been as Lead ux designer, web developer from conception to the very release. The goal of the project was to Design an app that helped to make it easier to assign and track tasks. </p>
+
+            <p>The target were all the bakeries that find to be hard to manage themselves and their work. The main challenge was to build an effective and accessible app for everyone maintaining the design easy to understand.</p>
+
+            <!-- <h4>Research study details.</h4> -->
+            <p>I conducted user reviews and empathy maps to understand the users I’m designing for and their needs. The initial pain points of the user were:</p>
+            <!-- <ul>
+                <li>Time: workers of the bakery have no time to lose because of disorganization</li>
+                <li>Low productivity: the disorganization on the management of task delivery produce low productivity</li>
+                <li>Frustration: low productivity creates frustration on work and also in the personal life of all employees</li>
+            </ul> -->
+
+            <h4>Paper wireframes</h4>
+            <div class="text-center">
+                <img id="Fra" src="assets/Img/paper-wireframe.png" alt="paper-wireframes">
             </div>
-        </section>
 
-        <!--Hard and soft skills-->
-        <section class="container-fluid skills" id="Skills">
-            <h2>Hard and soft kills.</h2>
-            <p><b>Hard skills:</b>
-                <ul> 
-                    <li> Html 5 and Css 3 </li>
-                    <li> Bootstrap 5 </li>
-                    <li> Typescript and Angular </li>
-                    <li> Versione control with Git </li>
-                    <li> Figma for prototyping websites and Material design </li>
-                    <li> Java and Sql </li>
-                </ul>
-            </p>
-            <p>
-                Platforms on which I'm studying: 
-                <!--target="_blank" for open a link in a new tab-->
-                <a href="https://www.start2impact.it/" target="_blank">Start2impact</a>, 
-                <a href="https://www.w3schools.com/" target="_blank">W3schools</a> and
-                <a href="https://www.udemy.com/" target="_blank">Udemy</a>
-            </p>
-            <p><b>Soft skills:</b> In the past I have worked closely with clients as a stagist
-                and I like talking, meeting new people and listening new advices and opinions.
-            </p>
-        </section>
+            <br>
 
-        <!-- todo > aggiungere case studies qui -->
-
-        <!--Social-->
-        <section class="container-fluid padding social" id="Social">
-            <div class="row text-center padding">
-                <div class="col-12">
-                    <h2>Social.</h2>
-                </div>
-                <div class="col-12 social padding">
-                    <a href="https://github.com/fragianci" target="_blank">
-                        <i class="fab fa-github"></i></a>
-                    <a href="https://www.instagram.com/fragianci" target="_blank">
-                        <i class="fab fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/francesco-g-278a22112/" target="_blank">
-                        <i class="fab fa-linkedin"></i></a>  
-                </div>
+            <h4>Wireframes with high-fidelity prototypes</h4>
+            <div class="text-center">
+                <img id="Fra" src="assets/Img/wireframes.png" alt="wireframes">
             </div>
-        </section>
+
+            <h4>Conclusion</h4>
+            <p>It's been a fun project to do and i can say I've learn a lot of things in UX research and the tools like Figma and Adobe XD. Furthermore it is inspiring to know that we can help people with our work.</p>
+        </div>
 
         <!--Footer-->
         <footer class="container-fluid" id="Contact-me">
             <hr>
-            <h2>Contact me with this.</h2>
+            <h2>Compile the form to contact me</h2>
             <div class="footer">
                 <form id='contact-form' class="form-group">
                     <input type="hidden" name="contact_number">

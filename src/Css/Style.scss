@@ -44,7 +44,9 @@ body {
         li {
           list-style-type: none;
           padding: 0 10px 0 10px;
-
+          .nav-link {
+            color: $bg-color;
+          }
           .nav-link:link,
           .nav-link:visited {
             color: $bg-color;

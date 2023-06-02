@@ -22,7 +22,8 @@ body h1 {
   font-size: 35px;
 }
 
-body h2 {
+body h2,
+h4 {
   text-align: center;
   padding: 5px 0 5px 0;
 }
@@ -43,11 +44,14 @@ body .navbar #collapsibleNavbar ul li {
   padding: 0 10px 0 10px;
 }
 
+body .navbar #collapsibleNavbar ul li .nav-link,
 body .navbar #collapsibleNavbar ul li .nav-link:link,
 body .navbar #collapsibleNavbar ul li .nav-link:visited {
   color: #e6e6e6;
+  cursor: pointer;
 }
 
+body .navbar #collapsibleNavbar ul li .nav-link.clicked,
 body .navbar #collapsibleNavbar ul li .nav-link:hover {
   color: black;
 }
@@ -56,6 +60,14 @@ body .presentation {
   text-align: center;
   padding: 20px 0 5px 0;
   flex-direction: column;
+}
+
+body .show {
+  display: contents;
+}
+
+body .hide {
+  display: none;
 }
 
 body .presentation .nome-cognome {

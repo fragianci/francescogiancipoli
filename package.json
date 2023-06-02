@@ -1,0 +1,25 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "This is my first website. I wanted to add a minimal style but also unique.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fragianci/website.git"
+  },
+  "author": "Francesco Giancipoli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fragianci/website/issues"
+  },
+  "homepage": "https://github.com/fragianci/website#readme",
+  "dependencies": {
+    "luxon": "^3.3.0"
+  },
+  "devDependencies": {
+    "@types/luxon": "^3.3.0"
+  }
+}
